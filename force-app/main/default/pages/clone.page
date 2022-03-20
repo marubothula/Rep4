@@ -1,0 +1,62 @@
+<apex:page standardController="Registaration__c">
+  <apex:form >
+  <apex:pageBlock title=" Registaration Form">
+  <apex:pageBlockSection >
+  <apex:pageBlockSection columns="1">
+  <apex:image value="{!$Resource.emp}"/>
+  </apex:pageBlockSection>
+  
+  <apex:pageBlockSection columns="1" title="Registaration Page" collapsible="false">
+ 
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel >First name</apex:outputLabel>
+   <apex:inputText value="{!Registaration__c.First_name__c}"/>
+  </apex:pageBlockSectionItem>
+  
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel >Last name</apex:outputLabel>
+   <apex:inputText value="{!Registaration__c.Last_name__c}"/>
+  </apex:pageBlockSectionItem>
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel >Email id</apex:outputLabel>
+   <apex:inputText value="{!Registaration__c.Email_id__c}"/>
+  </apex:pageBlockSectionItem>
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel >Phone number</apex:outputLabel>
+   <apex:inputText value="{!Registaration__c.Phone_number__c}"/>
+  </apex:pageBlockSectionItem>
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel >Age</apex:outputLabel>
+   <apex:inputText value="{!Registaration__c.Age__c}"/>
+  </apex:pageBlockSectionItem>
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel >city</apex:outputLabel>
+   <apex:inputText value="{!Registaration__c.city__c}"/>
+  </apex:pageBlockSectionItem>
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel >State</apex:outputLabel>
+   <apex:inputText value="{!Registaration__c.State__c}"/>
+  </apex:pageBlockSectionItem>
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel >Country</apex:outputLabel>
+   <apex:inputText value="{!Registaration__c.Country__c}"/>
+  </apex:pageBlockSectionItem>
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel >Pin code</apex:outputLabel>
+   <apex:inputText value="{!Registaration__c.Pin_code__c}"/>
+  </apex:pageBlockSectionItem>
+   
+   <apex:panelGrid columns="3" style="margin-left:110px">
+   <apex:commandButton value="Submit" action="{!save}"/>
+   <apex:commandButton value="Back" action="{!save}"/>
+
+   <apex:commandButton value="Cancel" action="{!cancel}"/>
+   </apex:panelGrid>
+   </apex:pageBlockSection>
+  </apex:pageBlockSection>
+  
+ 
+  
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title ="Lightning Compnent">
+    <lightning-button-group>
+        <div class="slds-clearfix">
+            <lightning-button
+                    variant="brand"
+                    label="Add"
+                    class="slds-float_right"
+                    icon-name="utility:add"
+                    icon-position="left"
+                    onclick={Callme}>
+                </lightning-button>
+
+                <lightning-button
+                    variant="Success"
+                    label="Submit"
+                    class="slds-float_right"
+                    icon-name="utility:download"
+                    icon-position="left"
+                    onclick={handleClick}>
+                </lightning-button>
+        </div>
+    </lightning-button-group>
+    
+          <h1>  Field name = {abc} </h1>
+
+    <div class="firstBox">
+        <lightning-input label="Enter name" name="Name" type="text"></lightning-input><br/>
+        <lightning-input label="Enter Age" name="Age" type="number"></lightning-input><br/>
+        <lightning-input label="Enter DOB" name="DOB" type="date"></lightning-input>
+    </div>
+</lightning-card>
+</template>

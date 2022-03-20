@@ -1,0 +1,33 @@
+<apex:page >
+  <apex:form >
+  <apex:pageBlock title="SFDC Registaration Page">
+  <apex:pageBlockSection >
+  <apex:pageBlockSection columns="1">
+  <apex:image value="{!$Resource.emp}"/>
+  </apex:pageBlockSection>
+  
+  <apex:pageBlockSection columns="1" title="Login Page" collapsible="false">
+ 
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel > user id</apex:outputLabel>
+   <apex:inputText />
+  </apex:pageBlockSectionItem>
+  
+  <apex:pageBlockSectionItem >
+   <apex:outputLabel >Password</apex:outputLabel>
+   <apex:inputText />
+  </apex:pageBlockSectionItem>
+   
+   <apex:panelGrid columns="2" style="margin-left:110px">
+   <apex:commandButton value="Login"/>
+   <apex:commandButton value="Cancel"/>
+   </apex:panelGrid>
+
+  </apex:pageBlockSection>
+  </apex:pageBlockSection>
+  
+ 
+  
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

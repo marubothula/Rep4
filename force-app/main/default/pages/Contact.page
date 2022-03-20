@@ -1,0 +1,17 @@
+<apex:page standardController="Contact">
+<apex:form >
+<apex:pageBlock Title="Contact INFORMATION">
+<apex:pageBlockButtons >
+<apex:commandButton action="{!Save}" value="Save"/>
+</apex:pageBlockButtons>
+<apex:pageBlockSection Title="Contacts">
+
+
+
+</apex:pageBlockSection>
+
+</apex:pageBlock>
+
+
+</apex:form>
+</apex:page>

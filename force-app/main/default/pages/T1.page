@@ -1,0 +1,23 @@
+<apex:page standardController="Account" >
+
+  <apex:form >
+  <header>
+  <h1>Account Web page</h1>
+  </header>
+  <h3>Accounts</h3>
+   
+  <apex:pageBlock >
+  
+        <apex:commandButton value="NEW"/>
+        <apex:commandButton value="save"/>
+        <apex:commandButton value="Cancle"/>
+                    
+        <apex:pageBlockSection >
+            <apex:inputField value="{!Account.Name}"/>
+            <apex:inputField value="{!Account.AccountNumber}"/>
+ 
+        </apex:pageBlockSection>
+  </apex:pageBlock>
+        
+  </apex:form>
+</apex:page>

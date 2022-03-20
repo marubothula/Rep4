@@ -1,0 +1,23 @@
+<apex:page standardController="Account" showHeader="false">
+<apex:form >
+<apex:pageBlock >
+<apex:commandButton value="save" Action="(!save)"/>
+<apex:commandButton value="Cancel" Action="(!Cancel)"/>
+<apex:pageBlockSection >
+<apex:inputField value="{!Account.Name}"/>
+<apex:inputField value="{!Account.AccountNumber}"/>
+<apex:inputField value="{!Account.Site}"/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+<apex:pageBlock >
+<apex:pageBlockSection >
+<apex:pageBlockSectionItem >
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <apex:inputField value="{!Account.AccountNumber}"/>
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:inputField value="{!Account.Site}"/>
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

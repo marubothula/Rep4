@@ -1,0 +1,33 @@
+<apex:page standardController="Opportunity" >
+
+<APEX:FORm >
+            <apex:pageBlock title="New VF Page" >
+            
+            <apex:commandButton action="{New}" value=" New"/  >
+             <apex:commandButton action="{Save}" value=" Save"/>
+             <apex:commandButton action="{Delete}" value="Delete"/>
+          
+           <apex:pageBlockSection title="Opportunity Details" >
+           
+                    <apex:inputField value="{!Opportunity.name}" /><br> </br>
+                    <apex:inputField value="{!Opportunity.amount}" />
+           
+           </apex:pageBlockSection> 
+           
+                
+                 <apex:pageBlockSection title="Opportunity Account DeatislDetails" >
+           
+                    <apex:inputField value="{!Opportunity.Accountid}" /><br> </br>
+                    <apex:inputField value="{!Opportunity.amount}" />
+           
+           </apex:pageBlockSection>                 
+                    
+                               
+            </apex:pageBlock>
+          
+          </APEX:FORm>
+          
+
+                        
+
+</apex:page>

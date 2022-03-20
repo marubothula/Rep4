@@ -1,0 +1,13 @@
+<template>
+    <template for:each={course_details} for:item=abc>
+        <p key={abc.name}> 
+            <c-course-info >
+                <lightning-card title={abc.name} slot=first> 
+                        Course duration : {abc.name} <br/>
+                        Course duration : {abc.duration} <br/>
+                        Course fee : {abc.fee} <br/>
+                </lightning-card>
+            </c-course-info>
+        </p>
+    </template>
+</template>

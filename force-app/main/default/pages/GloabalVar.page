@@ -1,0 +1,5 @@
+<apex:page >
+    {! $User.LastName} <br/>
+    {! $User.FirstName} <br/>
+    {! $Profile.Name} <br/>
+</apex:page>

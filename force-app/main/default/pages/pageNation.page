@@ -1,0 +1,20 @@
+<apex:page controller="pageNationcon">
+ <apex:form >
+ <apex:pageBlock title="PageNation">
+ <apex:pageBlockTable value="{!account}" var="acc"> 
+ <apex:column value="{!acc.Name}" />
+ <apex:column value="{!acc.AccountNumber}"/>
+  <apex:column value="{!acc.Site}"/>
+   <apex:column value="{!acc.Type}"/>
+ 
+ </apex:pageBlockTable>
+ 
+ <apex:panelGrid columns="4">
+ <apex:commandButton value="First" action="{!first}" disabled="{!!hasprevious}"/>
+ <apex:commandButton value="Previous" action="{!Previous}" disabled="{!!hasprevious}"/>
+ <apex:commandButton value="Next" action="{!Next}" disabled="{!!hasNext}"/>
+ <apex:commandButton value="Last" action="{!Last}" disabled="{!!hasNext}"/>
+  </apex:panelGrid>
+ </apex:pageBlock>
+ </apex:form>
+</apex:page>

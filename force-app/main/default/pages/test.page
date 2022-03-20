@@ -1,0 +1,3 @@
+<apex:page >
+    <apex:sectionHeader title="Firstpage" subtitle="Newpage" help="https://www.google.com"/>
+</apex:page>

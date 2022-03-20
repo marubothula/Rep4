@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Account Data">
+        <lightning-input type="text" label="Enter Account name" name="Acc" onchange={Accname}></lightning-input>
+        <lightning-input type="phone" label="Enter Account phone" name="phone" onchange={Accphone}></lightning-input>
+        <lightning-input type="text" label="Enter Account industry" name="industry" onchange={Accindustry}></lightning-input>
+        <lightning-input type="text" label="Enter Account rating" name="rating" onchange={Accrating}></lightning-input>
+        <lightning-button label="Submit" onclick={show}></lightning-button>
+        {name}<br/>
+        {phone}<br/>
+        {industry}<br/>
+        {rating}<br/>
+    </lightning-card>
+</template>
+</template>

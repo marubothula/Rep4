@@ -1,0 +1,15 @@
+<template>
+    <h1>Printing Arrays Method1 :</h1>
+
+    <template for:each={cities} for:item=a>
+        <p key={a}>{a}</p>
+    </template>
+
+    <h1>Printing Arrays Method 2 :</h1>
+
+    <template iterator:item={cities}>
+        <p key={item.value}>{item.value}</p>
+    </template>
+
+
+</template>

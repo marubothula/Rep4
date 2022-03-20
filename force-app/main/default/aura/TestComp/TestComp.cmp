@@ -1,0 +1,5 @@
+<aura:component >
+    <h2> This is test component </h2>
+    <h3> This is test component </h3>
+    <h4> This is test component </h4>
+</aura:component>
