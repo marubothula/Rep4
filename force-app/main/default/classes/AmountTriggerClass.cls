@@ -1,3 +1,4 @@
+/* Date Added in Trigger */
 Public Class AmountTriggerClass {
 
     
